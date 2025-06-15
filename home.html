@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Mercadinho Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body onload="verificarLogin(); carregarProdutos(); carregarCarrinho();">
+        <h1>Bem-vindo(a) ao Mercadinho Digital</h1>
+        <div id="catalogo" class="produtos"></div>
+
+        <h2>Carrinho</h2>
+        <div id="carrinho" class="carrinho"></div>
+        <p>Total: R$ <span id="total">0.00</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+
+        <script src="script.js"></script>
+    </body>
+</body>
+</html>
