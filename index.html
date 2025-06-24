@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mercadinho - Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login – Mercadinho Digital</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Mercadinho Digital</h1>
-        <input type="text" id="usuario" placeholder="usuario">
-        <input type="password" id="senha" placeholder="senha">
-        <button onclick="login()">Entrar</button>
-        <p id="mensagem-erro" class="erro"></p>
-    </div>
-
-    <script src="script.js"></script>
+  <header>
+    <div class="logo">Mercadinho Digital</div>
+  </header>
+  <main class="login-container">
+    <h1>Entrar</h1>
+    <input type="text" id="usuario" placeholder="Usuário" />
+    <input type="password" id="senha" placeholder="Senha" />
+    <button onclick="login()">Entrar</button>
+    <p id="mensagem-erro" class="erro"></p>
+  </main>
+  <footer>
+    <p>© 2025 Mercadinho Digital. Todos os direitos reservados.</p>
+    <small>
+      <a href="#">Sobre nós</a> |
+      <a href="#">Contato</a> |
+      <a href="#">Termos de uso</a>
+    </small>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

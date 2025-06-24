@@ -1,22 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Mercadinho Digital</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo – Mercadinho Digital</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <body onload="verificarLogin(); carregarProdutos(); carregarCarrinho();">
-        <h1>Bem-vindo(a) ao Mercadinho Digital</h1>
-        <div id="catalogo" class="produtos"></div>
-
-        <h2>Carrinho</h2>
-        <div id="carrinho" class="carrinho"></div>
-        <p>Total: R$ <span id="total">0.00</span></p>
+<body onload="verificarLogin(); carregarProdutos(); carregarCarrinho();">
+  <header>
+    <div class="logo">Mercadinho Digital</div>
+    <nav>
+      <a href="home.html">Produtos</a>
+      <a href="#" onclick="document.getElementById('carrinho').scrollIntoView()">
+        Carrinho (R$ <span id="total-header">0.00</span>)
+      </a>
+      <a href="index.html" style="margin-left:auto">Sair</a>
+    </nav>
+  </header>
+  <main>
+    <section class="produtos" id="catalogo"></section>
+    <aside class="carrinho-container">
+      <h2>Seu Carrinho</h2>
+      <div id="carrinho" class="carrinho"></div>
+      <div class="checkout">
+        <span>Total: R$ <span id="total">0.00</span></span>
         <button onclick="finalizarCompra()">Finalizar Compra</button>
-
-        <script src="script.js"></script>
-    </body>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <p>© 2025 Mercadinho Digital</p>
+    <small>
+      <a href="#">Contato</a> |
+      <a href="#">Política de Privacidade</a>
+    </small>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
